@@ -1,5 +1,5 @@
 
-public class Athlete extends Thread{
+public class Athlete extends Thread {
     private final int id;
     private final int speed;
     private final int barriersCount;
@@ -25,12 +25,10 @@ public class Athlete extends Thread{
             }
             System.out.println("Спортсмен № " + id + " пробежал барьер № " + i);
         }
-
         finishTime = System.currentTimeMillis() - startTime;
-        System.out.println("Спортсмен № " + id + " финишировал за " + finishTime + " мс!");
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
